@@ -88,8 +88,9 @@
 }
 @media (max-width: 1024px) {
   .profile {
-    height: 530px;
+    height: auto;
     width: 330px;
+    padding-bottom: 50px;
   }
   .user-profile h2 {
     font-size: 25px;
@@ -108,8 +109,9 @@
 }
 @media (max-width: 800px) {
   .profile {
-    height: 480px;
+    height: auto;
     width: 300px;
+    padding-bottom: 40px;
   }
   .user-profile {
     padding-top: 30px;
@@ -136,7 +138,7 @@
 }
 @media (max-width: 500px) {
   .profile {
-    height: 410px;
+    height: auto;
     width: 260px;
     right: 60px;
   }
@@ -146,6 +148,9 @@
   }
   .user-profile h2 {
     font-size: 18px;
+  }
+  .options {
+    padding-bottom: 20px;
   }
   .options button {
     width: 200px;
