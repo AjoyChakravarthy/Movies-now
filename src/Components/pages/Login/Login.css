@@ -1,0 +1,122 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.login-form {
+  height: 500px;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login h1 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  color: white;
+}
+.login label {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+.login input {
+  width: 300px;
+  height: 50px;
+  margin-bottom: 23px;
+  margin-top: 5px;
+  padding-left: 5px;
+  border: 3px solid rgb(31, 31, 31);
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.login button {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #dfff3dca;
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+.login button:hover {
+  background-color: #dcfd35;
+}
+.login p {
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.619);
+}
+.login span {
+  color: #dcfd35;
+  font-weight: 600;
+  cursor: pointer;
+}
+.login .line {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 10px;
+}
+.line hr {
+  width: 80px;
+  height: 2px;
+  background-color: white;
+}
+.login .google-login {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.login .google-login img {
+  width: 25px;
+  margin-right: 10px;
+}
+.demo-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.demo-account h2 {
+  font-size: 18px;
+  padding-top: 15px;
+}
+.demo-account p {
+  font-size: 16px;
+  padding-bottom: 0;
+  color: white;
+}
+@media (max-width: 500px) {
+  .login h1 {
+    font-size: 25px;
+  }
+  .login label {
+    font-size: 14px;
+  }
+  .login p {
+    font-size: 13px;
+  }
+  .login button {
+    font-size: 16px;
+  }
+  .login-form {
+    height: 500px;
+  }
+}

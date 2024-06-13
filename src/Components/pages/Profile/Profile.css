@@ -1,0 +1,160 @@
+.profile {
+  height: 600px;
+  width: 400px;
+  background-color: #dcfd35;
+  color: black;
+  position: fixed;
+  top: 80px;
+  right: 80px;
+  border-radius: 10px 7px 10px 10px;
+  padding-top: 20px;
+}
+.profile::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 23px solid #dcfd35;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.user-profile h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  color: black;
+}
+.user-profile p {
+  font-size: 15px;
+  font-weight: 600;
+  color: black;
+}
+.profile-circle {
+  background-color: black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #dcfd35;
+  font-size: 60px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.options button {
+  width: 300px;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.244);
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  margin-top: 10px;
+}
+.options button i {
+  margin-left: 6px;
+}
+.options button:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hide {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .profile {
+    height: 600px;
+    width: 350px;
+  }
+}
+@media (max-width: 1024px) {
+  .profile {
+    height: 530px;
+    width: 330px;
+  }
+  .user-profile h2 {
+    font-size: 25px;
+  }
+  .user-profile p {
+    font-size: 12px;
+  }
+  .options button {
+    width: 280px;
+    height: 65px;
+    font-size: 16px;
+  }
+  .options {
+    margin-top: 0;
+  }
+}
+@media (max-width: 800px) {
+  .profile {
+    height: 480px;
+    width: 300px;
+  }
+  .user-profile {
+    padding-top: 30px;
+  }
+  .user-profile h2 {
+    font-size: 20px;
+  }
+  .user-profile p {
+    font-size: 10px;
+  }
+  .options button {
+    width: 240px;
+    height: 60px;
+    font-size: 12px;
+  }
+  .options .profile-btn {
+    margin-top: 1px;
+  }
+  .profile-circle {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .profile {
+    height: 410px;
+    width: 260px;
+    right: 60px;
+  }
+  .user-profile {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .user-profile h2 {
+    font-size: 18px;
+  }
+  .options button {
+    width: 200px;
+    height: 50px;
+    margin-top: 0;
+  }
+  .profile-circle {
+    width: 55px;
+    height: 55px;
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #111;
+}
+.profile_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 600px;
+  z-index: 9999;
+  background-color: #dcfd35;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
